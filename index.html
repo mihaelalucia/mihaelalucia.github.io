@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="HTML,CSS,JavaScript,references,,source code,colors,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome To Gaia</title>
+    <link rel="stylesheet" href="WelcomeGaia.css">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+ 
+</head>
+    
+     
+     
+<body><!--HTML headings are defined with the <h1> to <h6> tags.<h1> defines the most important heading. <h6> defines the least important heading:  
+                  Navigation Bar-->
+           <br><h1><img class="logo" src="Images/logo.png" alt="logo"></h1>
+                  
+               
+                 
+                  
+ <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="AboutGaia.html">About Gaia</a>
+  <a href="WhatWeGrow1.html"> What We Grow</a>
+  <a href="WhatWeSell1.html">What We Sell</a>
+  <a href="WhyOrganic1.html">Why Organic</a>
+  <a href="ContactUs1.html"> Contact Us</a>
+  <input type="text" placeholder="Search.." style="align-items:baseline;">
+</div>
+                                    
+                     
+<div class="header">
+    
+    <h1>Welcome To Gaia!</h1>
+    <p id="titletxt">Welcome to our website. Gaia offers you a wide range of top quality organic products. All vegetables, fruits and animals are grown on our own farm. The products can be purchased either from the farm shop or online. You will easily find all the details you need on our website. Thank you for your interest.</p><br>
+</div> 
+  
+<div class="creamery"></div>
+<div class="container_farm_img">
+    <img src="Images/gaiafarm.jpg" alt="Farm" style="width:1330px; height:600px;">
+       
+<div class="text-block"><!--attached sticky img on the big one--> 
+    <h3 style="text-align: center; color: white;"><br>Gaia, Our Organic Farm</h3><p style="text-align: center"><em>Caring and<br>Conscientous Farming</em></p>
+</div>
+
+<div class="container">
+<div class="box" style="width:33.3%; height:750px; border:none; overflow:hidden; text-align: justify">
+    <h2>Fruits and Vegetables</h2>
+        <p class="p1234"><!-- To define a style for a special type of elements, add a class attribute to the element:  
+                          Use <br> for break, otherwise In HTML, spaces and new lines are ignored: -->
+          Eating plenty of fruits and veggies may help reduce the risk of many diseases, including heart disease, high blood pressure, and some cancers. Vitamins and Minerals. Fruits and veggies are rich in vitamins and minerals that help you feel healthy and energized.
+         
+        <p>Click <sub>for our weekly receipe</sub></p> <!--click button-->
+
+        
+               
+        <script src="Gaia.js"></script>
+                <img src="Images/vegetables.jpg" alt="Organic Fruits and Vegetables" style="width:420px;height:232px;"> <!--The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains /The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).The value of the alt attribute should describe the image:/-->
+</div>
+<div class="box" style="width:33.3%; height:750px;border:none; overflow: hidden; text-align: justify;">
+        <h2>Meat</h2>
+                         <p class="p1234" >Health benefits. Meat, poultry, fish, dry beans and peas, eggs, nuts, and seeds supply many nutrients. These include protein, B vitamins (niacin, thiamin, riboflavin, and B6), vitamin E, iron, zinc, and magnesium. Proteins function as building blocks for bones, muscles, cartilage, skin, and blood.<br><br><br><br>
+                                 
+                             
+                       <img src="Images/Pork.jpg" alt="Organic Meat" style="width:420px;height:232px;"> <!-- Images in HTML have a set of size attributes, which specifies the width and height of the image//If width and height are not specified, the page might flicker while the image loads.-->
+       
+</div>
+    
+    <div class="box" style="width:33.3%; height:750px;border:none;text-align: justify;">
+        <h2>Dairy Products</h2>
+            <p class="p1234" > Milk and dairy foods are healthy foods and considered nutrient-rich because they serve as good sources of calcium and vitamin D as well as protein and other essential nutrients. They provide phosphorus, potassium, magnesium, and vitamins A, B12, and riboflavin1.<br><br>
+                
+    
+             <br><br><br><img src="Images/Milk-products.jpg" alt="Organic Diary Products" style="width:420px;height:232px;"> <!-- HTML images are defined with the <img> tag.The source file (src), alternative text (alt), width, and height are provided as attributes/The src attribute specifies the URL (web address) of the image:-->
+        
+             
+    </div>
+</div>
+      <h2>Filter Our Organic Products</h2>
+<!--creating filterable div elements-->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('vegetables')"> Vegetables</button>
+  <button class="btn" onclick="filterSelection('meat')"> Meat</button>
+  <button class="btn" onclick="filterSelection('dairy')"> Dairy</button>
+</div>
+<div class="container">
+  <div class="filterDiv fruits"><img src="Images/apple.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Red apple">Apple<br>£1.05</div>
+  <div class="filterDiv fruits"><img src="Images/apricots.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;"  alt="Apricot">Lemon<br>£1.10</div>
+  <div class="filterDiv fruits"><img src="Images/cherries.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;"  alt="Cherries">Cherry<br>£1.05</div>
+  <div class="filterDiv fruits"><img src="Images/cut-lemon.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Lemon">Lemon<br>£0.90</div>
+  <div class="filterDiv fruits"> <img src="Images/peaches.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Peaches">Peaches<br>£1.10</div>
+  <div class="filterDiv fruits"><img src="Images/pears.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pears">Pears<br>£1.20</div>
+  <div class="filterDiv fruits"><img src="Images/strawberries.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Straberries">Strawberry<br>£1.50</div>
+  <div class="filterDiv fruits"><img src="Images/grapes.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Grapes">Grapes<br>£1.35</div> 
+  <div class="filterDiv vegetables"><img src="Images/asparagus.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Asparagus">Asparagus<br>£1.35</div>
+  <div class="filterDiv vegetables"> <img src="Images/brocolli.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Brocolli">Broccoli<br>£1.50</div>
+  <div class="filterDiv vegetables"><img src="Images/cabbage.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cabbage">Cabbage<br>£1.40</div>
+  <div class="filterDiv vegetables"> <img src="Images/carrots1.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Carrots" >Carrot<br>£0.95</div>
+  <div class="filterDiv vegetables"><img src="Images/cauliflower.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cauliflower">Cauliflower<br>£0.98</div>
+  <div class="filterDiv vegetables"><img src="Images/cellery.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cellery" >Cellery<br>£1.00</div>
+  <div class="filterDiv vegetables"><img src="Images/cucumber.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cucumber">Cucumber<br>£1.00</div>
+  <div class="filterDiv vegetables">  <img src="Images/eggplant.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Eggplant">Eggplant<br>£0.80</div>
+  <div class="filterDiv vegetables"><img src="Images/parsnip.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Parsnip" >Parsnip<br>£0.55</div>
+  <div class="filterDiv vegetables"><img src="Images/pea.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pea">Pea<br>£1.10</div>
+  <div class="filterDiv vegetables"> <img src="Images/onion.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Onion" >Onion<br>£1.10</div>
+  <div class="filterDiv vegetables"><img src="Images/lettuce.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Lettuce">Lettuce<br>£0.80</div>
+  <div class="filterDiv vegetables"><img src="Images/pepper.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pepper">Pepper<br>£1.00</div>
+  <div class="filterDiv vegetables"><img src="Images/potato.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Potato">Potato<br>£1.09</div>
+  <div class="filterDiv vegetables"><img src="Images/spinach.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Spinach" >Spinach<br>££1.20</div>
+  <div class="filterDiv vegetables"><img src="Images/tomato.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Tomato">Tomato<br>£0.85</div>
+  <div class="filterDiv vegetables"><img src="Images/zucchini.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Zucchini">Zucchini<br>£1.10</div><br>
+  <div class="filterDiv meat"> <img src="Images/Beef.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Beef">Beef<br>£3.50</div>
+  <div class="filterDiv meat"> <img src="Images/Pork.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pork">Pork<br>£2.10</div>
+  <div class="filterDiv meat"><img src="Images/chicken.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Chicken">Chicken<br>£2.10</div><br>
+  <div class="filterDiv dairy"><img src="Images/cheese.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cheese">Cheese<br>£3.60</div>
+  <div class="filterDiv dairy"><img src="Images/milk-in-glass.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Milk">Milk<br>£1.90</div>
+  <div class="filterDiv dairy"><img src="Images/-yogurt-recipe-12.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Yougurt">Yougurt<br>£1.10</div>
+</div>
+      <script>
+    /*HOME*/
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+    // Adding the "show" class (display:block) to the filtered elements
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+// Showing filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+// Hiding those elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Adding active class to the current button (highlighting it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script> 
+<div class="container_video">
+       <br><iframe width="1320" height="200" src="https://www.youtube.com/embed/EFlnlGx0B5U" style="border:0;" allowfullscreen="allowfullscreen"></iframe>
+</div>
+<div class="footer" style="display:flex;">
+            <div><h3><br><br>Written by Mihaela Daybukat<br>
+             Visit us at:Gaia.com</h3></div><hr>
+             
+             <div><h3>Our Address</h3>
+             Gaia Farm <br> Cameron Ln, Algonquin Highlands,<br>ON K0M 1J1</div><hr>
+             
+             <div><h3>Contact Info</h3>T:02034565423<br>M:07411337626<br>E: mihaelalucia28@yahoo.com</div>
+          
+            <!-- Add font awesome icons -->
+<a href="http://www.facebook.com" class="fa fa-facebook"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter"></a> 
+<a href="http://www.google.co.uk" class="fa fa-google"></a>
+<a href="http://www.youtube.com" class="fa fa-youtube"></a> 
+             
+    </div></div>
+    </body>
+</html>

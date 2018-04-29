@@ -1,0 +1,449 @@
+/*this file does not contain html code and it is saved with .css
+/*HOME*/
+
+/*HEADER*/
+
+/*p1*/
+.logo{
+    /*border-radius: 20px;*/
+    float:left;
+    margin-top: -90px;
+    /*margin-left: 90;*/
+    width: 170px; 
+    height: 170px;
+    padding-left: 0px;
+}
+.topnav{/*navigation bar*/
+    font-weight: bolder;
+    line-height: 10px;/*(the size of every box)*/
+    position:relative;
+    float:right;
+    font-style: oblique;
+    background-color: #766969;/*top navigation bar*/
+    overflow: hidden;
+    display:block;
+    margin-right: 0px;
+    margin-left: 30px;
+    
+    }
+a{/*facebook, tweeter*/
+    
+    list-style-type:none;
+    margin:1px;
+    text-decoration: none;
+    overflow:visible;
+    display: inline-block;
+    color: black;
+    padding: 2px 2px;
+    text-decoration: none;
+}
+    
+.active{/*nav bar color*/
+    background-color: #bf7b8d;
+}
+ a hover {/*nav bar changes its color when we touch it*/
+    background-color: #79515d;
+     
+}
+.topnav input[type=text] {/*search nav bar*/
+  float: right;
+  padding: 1px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  border: 1px solid #9b5e5e;
+  font-size: 15px;
+}
+
+
+#titletxt{
+    text-align:left;
+    font-family: sans-serif;
+}
+h1 {
+ color:black;/* the text color*/
+ font-size: 2em;/*the text size */
+ text-align:center;
+ font-family: sans-serif;
+    }
+/*BODY*/
+body{  
+  background-color:#dff2e1;
+  font-family:  sans-serif;
+  font-size: 15px;/*this makes such a big difference on the all pages*/
+    /*for e.g. putting size 12px on the font size will make big gaps between and does not look nice.By putting size 18px, it looks nice but the website is not responsive. Size 15px is the best size and it looks responsive on tablet. */
+  color: black;/*all texts outside the paragraphs*/
+  background-image: url("Images/pexels-photo-616404.jpeg");/*the background-image has been setted for the the body element:*/
+  font-family: Arial;
+  padding: 8px;
+  font-weight: bold;
+}
+*{box-sizing: border-box;}
+p {/*the style for the elements in this class:*/
+    font-size: 120%; /*text size*/
+    color:black;
+    padding: 10px;/*the padding (space) between the text and the border:*/
+    margin: 5px;/* margin (space) outside the border:*/
+    font-weight: bold;
+    border-style:hidden;
+    /*border-bottom: 100%;*/
+    border-color: #1ff01f;
+    text-align:justify;
+    margin-bottom: auto;
+    
+   }
+
+h2{
+    color:Green;
+    text-align:center;
+}
+/*all about the sticky image and text*/
+.text-block {
+    position:sticky;
+    bottom: 40%;/*how far it goes up*/
+    right: 10px;
+    left: 100px;
+    top:-150px;
+    margin-left: 60px;
+    /*position:-webkit-sticky;*/
+    background-color: rgba(127, 184, 232, 0.88);
+    color: white;/*text color on the little img*/
+    font-family:sans-serif;
+}
+
+
+/*FOOTER*/
+.footer{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer_social{
+    margin-top: 5px;
+    align-items:center;
+}
+.footer_social a{
+    /*margin-left: 0px;*/
+    
+}
+.footer_social a img{
+    width: 80px;
+    height:50px;
+}
+
+/*ABOUT GAIA*/
+h3{/*subtitles/about gaia (footer:our add, contact info)*/
+    color:#1e8e33;
+    text-align:center;/*align the subtitles*/
+    font-weight: bold;
+}
+
+/*Style:CONTACT US and others*/
+ div.container{
+width:100%;
+/*border:1px solid;*/
+height:auto;
+display:flex;
+}
+div.box {
+width:100%;
+background-color:rgba(234, 237, 216, 0.54);
+border:1px solid white;
+height:auto;
+
+}
+img { /*/deleting this , logo and title are meesing up*/
+     width:100px;
+     height:100px;
+    float:none;
+    } 
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding:12%;
+    padding-left: 70px;
+    border: 5px solid #745f5f;/*your name, your ln, buckingamshire, write smth, */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]:hover {/*sumbmit button, when the mouse touches the button */
+    background-color: #67515b;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+input[type=submit] {
+    background-color: #938082;
+    padding: 12px 20px;
+    border:1px solid black;
+    cursor: pointer;
+    color: black;
+}
+/*ABOUT GAIA/GALERY*/
+
+img {
+  vertical-align: middle;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:flex;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px 0 0 3px;
+  user-select: none;
+ /* -webkit-user-select: none;*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 100px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(208, 234, 14, 0.8);
+}
+
+/* Number text (1/24 etc) */
+.numbertext {
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #6a9d74;
+  padding: 1px 1px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* twelve columns side by side */
+.column1 {
+  float: left;
+  width:70px;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active1,
+.demo:hover {
+  opacity: 1;
+}
+/*WHAT WE SELL*/
+.filterDiv {
+  float:left;
+  background-color: #a88888;
+  color: black;
+  width: 120px;
+  line-height: 30px;
+  text-align: center;
+  margin: 1px;
+  display:none;/*hidden by default*/
+}
+/*this class is added to the filtered elements*/
+.show {
+  display:block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow:scroll;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0;
+  border-radius: 3px;
+ 
+}
+/*  background color on mouse-hover*/
+.btn:hover {
+  background-color: #6f6161;
+}
+/* background color for the active button*/
+.btn.active {
+  background-color: #6f4f4f;
+  color: white;
+}
+/*billing add and payment section*/
+.row {/*deleting this, billing address and payment sections will be one under the other one, instead one next to each other*/
+/*  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  /*-ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.col-25 {
+ /* -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+.col-25 {
+    margin-bottom: 20px;
+  }
+.col-50 {
+ /* -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+.col-75 {
+  /*-ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75 {
+padding: 0 50px;/*distance between billing address and payment*/
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #714f4f;
+  border-radius: 3px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: white;
+}
+hr {
+  border: 1px solid lightgrey;
+}
+span.price {/*all about product price*/
+  float: right;
+  color: black;
+}
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 60px;
+    height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+    .row {
+    flex-direction: column-reverse;}
+    /*.column, input[type=submit] */
+}
+@media screen and (max-width:720px){
+    .box p {font-size: 12px;}
+
+    .topnav a, .topnav input[type=text] {
+        float: left;
+        display:flex;
+        text-align: left;
+        width: 200px;
+        margin: 1px;
+        padding: 2px;}
+    .column, input[type=submit] {
+        width: 200px;
+        margin-top: 0;}
+   .footer-link{
+        text-align:center;}
+    
+}
+
+
+
+
+
+    
+
+    
+
+ 

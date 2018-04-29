@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang ="en" >
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome To Gaia</title>
+    <link rel="stylesheet" href="WelcomeGaia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body><!--HTML headings are defined with the <h1> to <h6> tags.<h1> defines the most important heading. <h6> defines the least important heading:  -->
+<br><h1 ><img class="logo" src="Images/logo.png" alt="logo"></h1><br>
+
+<div class="topnav">
+  <a  href="index.html">Home</a>
+  <a href="AboutGaia.html">About Gaia</a>
+  <a href="WhatWeGrow1.html"> What We Grow</a>
+  <a class="active" href="WhatWeSell1.html">What We Sell</a>
+  <a href="WhyOrganic1.html">Why Organic</a>
+  <a href="ContactUs1.html"> Contact Us</a>
+  <input type="text" placeholder="Search.." style="align-items:baseline;">
+</div>    
+      <div class="header"> 
+                    <h1 style="float: left;">What We Sell</h1><br><br><br><br><br></div>
+                   <br><p style="text-align: left;">This is our farm's store where you can only find organic products of the highest quality!</p><hr>
+                          <div class="p1234"><h2>Gaia's Farm Store</h2>
+                           <div id="shop">
+                               <img src="Images/shop.png" alt="Farm Shop" style="width:100%;height:auto;">
+                                   <div class="containers"></div>
+                                   
+</div>
+    </div><br>
+       <!--creating a tabbed image galery-->
+    <h2 style="text-align: center;">Our Organic products</h2>
+ <!--filter Div element-->   
+ <h2>Filter Our Organic Products</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('vegetables')"> Vegetables</button>
+  <button class="btn" onclick="filterSelection('meat')"> Meat</button>
+  <button class="btn" onclick="filterSelection('dairy')"> Dairy</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv fruits"><img src="Images/apple.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Red apple">Apple<br>£1.05</div>
+  <div class="filterDiv fruits"><img src="Images/apricots.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;"  alt="Apricot">Lemon<br>£1.10</div>
+  <div class="filterDiv fruits"><img src="Images/cherries.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;"  alt="Cherries">Cherry<br>£1.05</div>
+  <div class="filterDiv fruits"><img src="Images/cut-lemon.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Lemon">Lemon<br>£0.90</div>
+  <div class="filterDiv fruits"> <img src="Images/peaches.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Peaches">Peaches<br>£1.10</div>
+  <div class="filterDiv fruits"><img src="Images/pears.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pears">Pears<br>£1.20</div>
+  <div class="filterDiv fruits"><img src="Images/strawberries.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Straberries">Strawberry<br>£1.50</div>
+  <div class="filterDiv fruits"><img src="Images/grapes.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Grapes">Grapes<br>£1.35</div> 
+  <div class="filterDiv vegetables"><img src="Images/asparagus.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Asparagus">Asparagus<br>£1.35</div>
+  <div class="filterDiv vegetables"> <img src="Images/brocolli.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Brocolli">Broccoli<br>£1.50</div>
+  <div class="filterDiv vegetables"><img src="Images/cabbage.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cabbage">Cabbage<br>£1.40</div>
+  <div class="filterDiv vegetables"> <img src="Images/carrots1.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Carrots" >Carrot<br>£0.95</div>
+  <div class="filterDiv vegetables"><img src="Images/cauliflower.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cauliflower">Cauliflower<br>£0.98</div>
+  <div class="filterDiv vegetables"><img src="Images/cellery.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cellery" >Cellery<br>£1.00</div>
+  <div class="filterDiv vegetables"><img src="Images/cucumber.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cucumber">Cucumber<br>£1.00</div>
+  <div class="filterDiv vegetables">  <img src="Images/eggplant.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Eggplant">Eggplant<br>£0.80</div>
+  <div class="filterDiv vegetables"><img src="Images/parsnip.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Parsnip" >Parsnip<br>£0.55</div>
+  <div class="filterDiv vegetables"><img src="Images/pea.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pea">Pea<br>£1.10</div>
+  <div class="filterDiv vegetables"> <img src="Images/onion.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Onion" >Onion<br>£1.10</div>
+  <div class="filterDiv vegetables"><img src="Images/lettuce.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Lettuce">Lettuce<br>£0.80</div>
+  <div class="filterDiv vegetables"><img src="Images/pepper.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pepper">Pepper<br>£1.00</div>
+  <div class="filterDiv vegetables"><img src="Images/potato.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Potato">Potato<br>£1.09</div>
+  <div class="filterDiv vegetables"><img src="Images/spinach.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Spinach" >Spinach<br>££1.20</div>
+  <div class="filterDiv vegetables"><img src="Images/tomato.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Tomato">Tomato<br>£0.85</div>
+  <div class="filterDiv vegetables"><img src="Images/zucchini.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Zucchini">Zucchini<br>£1.10</div><br>
+  <div class="filterDiv meat"> <img src="Images/Beef.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Beef">Beef<br>£3.50</div>
+  <div class="filterDiv meat"> <img src="Images/Pork.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Pork">Pork<br>£2.10</div>
+  <div class="filterDiv meat"><img src="Images/chicken.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Chicken">Chicken<br>£2.10</div><br>
+  <div class="filterDiv dairy"><img src="Images/cheese.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Cheese">Cheese<br>£3.60</div>
+  <div class="filterDiv dairy"><img src="Images/milk-in-glass.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Milk">Milk<br>£1.90</div>
+  <div class="filterDiv dairy"><img src="Images/-yogurt-recipe-12.jpg" style="padding-left: 5px; padding-right: 5px;padding-top: 5px;" alt="Yougurt">Yougurt<br>£1.10</div>
+</div>
+ <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black;"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Apple</a> <span class="price">£1.05</span></p>
+      <p><a href="#">Apricot</a> <span class="price">£1.10</span></p>
+      <p><a href="#">Cherry</a> <span class="price">£1.05</span></p>
+      <p><a href="#">Lemon</a> <span class="price">£0.90</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>£4.10</b></span></p>
+    </div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<h2>Checkout Form</h2>
+<!-- If we resize the browser window less then 800px wide, then two columns are made on the top of each other, instead of next to each other. -->
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Mihaela L. Tanase">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="miha@yahoo.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="145 Buller Road, CR78QZ">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="London">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Ln">
+              </div>
+              <div class="col-50">
+                <label for="pcode">Postal Code</label>
+                <input type="text" id="pcode" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:orangered;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:lawngreen;"></i>
+              <i class="fa fa-cc-discover" style="color:#bdb3d3;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Mihaela L. Tanase">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="0101-0202-0303-0404">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="January">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="434">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+ 
+  </div>
+</div>
+      <hr>   
+   <div class="footer" style="display:flex;padding:10px;">
+  
+            <div><h3><br><br> Written by Mihaela Daybukat<br>
+             Visit us at:Gaia.com</h3></div><br><hr>
+             
+             <div><h3>Our Address</h3>
+             Gaia Farm <br> Cameron Ln, Algonquin Highlands,<br>ON K0M 1J1</div><hr>
+             
+             <div><h3>Contact Info</h3>T:02034565423<br>M:07411337626<br>E: mihaelalucia28@yahoo.com</div><hr>
+<a href="http://www.facebook.com" class="fa fa-facebook"></a>
+<a href="http://www.twitter.com" class="fa fa-twitter"></a> 
+<a href="http://www.google.co.uk" class="fa fa-google"></a>
+<a href="http://www.youtube.com" class="fa fa-youtube"></a> 
+                
+             
+        </div>
+         </body>
+         </html>
+         
+         
+          
+   
+    
